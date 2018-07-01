@@ -1,9 +1,9 @@
 {
   "name": "my_novels",
   "description": "my novels project",
-  "main": "server.js",
+  "main": "development.js",
   "authors": [
-    "Yang Zhang"
+    ""
   ],
   "license": "ISC",
   "homepage": "https://github.com/yangemail/my_novels",

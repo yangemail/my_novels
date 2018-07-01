@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="zh-cn">
+    <meta charset="utf-8"/>
+    <meta name="renderer" content="webkit"/>
+    <title>小说城</title>
+    <!--<title>{{controller.meta_title}} | {{config.setup.WEB_SITE_TITLE}}</title>-->
+    <meta name="keywords" content="小说"/>
+    <meta name="description" content="小说"/>
+    <meta name="Author" content=""/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0"/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- THEME CSS -->
+    <!--<link href="/static/assets/css/essentials.css" rel="stylesheet" type="text/css"/>-->
+    <link href="/static/assets/css/layout.css" rel="stylesheet" type="text/css"/>
+    <!-- PAGE LEVEL SCRIPTS -->
+    <link href="/static/assets/css/header-1.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/assets/css/color_scheme/pink.css" rel="stylesheet" type="text/css" id="color_scheme"/>
+
+    <!--<link href="/static/assets/css/reset.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="/static/assets/css/index.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="/static/assets/css/index-POP.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="/static/assets/css/jy_mai.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="/static/assets/css/base.css" rel="stylesheet" type="text/css"/>-->
+</head>
+
+
+<body>
+
+<div id="wrapper">
+    <!-- Top Bar -->
+    <div id="topBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    欢迎您，<a>[登录]</a> 或 <a>[注册]</a>
+                </div>
+                <div class="col-sm">
+                    热门搜索：
+                </div>
+                <div class="col-sm">
+                    繁体版 | 设为首页 | 联系我们 | 加入收藏 | 积分
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Top Bar -->
+
+    <!-- Header -->
+    <div id="header" class="clearfix header-sm header-fixed-top">
+        <header id="topNave">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="#">Hidden brand</a>
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <!--<form class="form-inline my-2 my-lg-0">-->
+                            <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>-->
+                        <!--</form>-->
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+    <!-- /Header -->
+
+    <!-- Content -->
+    <!-- PAGE HEADER -->
+    <section class="page-header page-header-xs">
+        <div class="container">
+            <h1>页面名字</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">首页</a></li>
+                    <li class="breadcrumb-item"><a href="#">图书信息</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">武侠小说</li>
+                </ol>
+            </nav>
+        </div>
+        <!--<nav aria-label="breadcrumb">-->
+            <!--<ol class="breadcrumb">-->
+                <!--<li class="breadcrumb-item"><a href="#">Home</a></li>-->
+                <!--<li class="breadcrumb-item"><a href="#">Library</a></li>-->
+                <!--<li class="breadcrumb-item active" aria-current="page">Data</li>-->
+            <!--</ol>-->
+        <!--</nav>-->
+    </section>
+    <!-- /PAGE HEADER -->
+    <!-- Page Content -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-header">
+                                玄幻魔法 - 共计 666 本
+                            </div>
+                            <img class="card-img-top img-thumbnail" src="/static/assets/images/avatar2.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                玄幻魔法 - 共计 666 本
+                            </div>
+                            <img class="card-img-top img-thumbnail" src="/static/assets/images/avatar2.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                玄幻魔法 - 共计 666 本
+                            </div>
+                            <img class="card-img-top img-thumbnail" src="/static/assets/images/avatar2.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                玄幻魔法 - 共计 666 本
+                            </div>
+                            <img class="card-img-top img-thumbnail" src="/static/assets/images/avatar2.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Force next columns to break to new line at md breakpoint and up -->
+                    <br/>
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-header">
+                                玄幻魔法 - 共计 666 本
+                            </div>
+                            <img class="card-img-top img-thumbnail" src="/static/assets/images/avatar2.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                玄幻魔法 - 共计 666 本
+                            </div>
+                            <img class="card-img-top img-thumbnail" src="/static/assets/images/avatar2.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                玄幻魔法 - 共计 666 本
+                            </div>
+                            <img class="card-img-top img-thumbnail" src="/static/assets/images/avatar2.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                玄幻魔法 - 共计 666 本
+                            </div>
+                            <img class="card-img-top img-thumbnail" src="/static/assets/images/avatar2.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <p class="h4">正在更新的好看小说</p>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">下载本书</th>
+                                <th scope="col">书名 / 章节</th>
+                                <th scope="col">作者</th>
+                                <th scope="col">更新时间</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">txt 下载</th>
+                                <td>武域灵主第70章 半步培元</td>
+                                <td>倚梦凌薇</td>
+                                <td>6分钟前</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 侧边栏 -->
+                <div class="col">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-secondary">搜索</button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+
+                    推荐小说
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">本周推荐</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                               aria-controls="profile" aria-selected="false">本站推荐</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <ol class="list-inline">
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                            </ol>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <ol class="list-inline">
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <ul class="nav nav-tabs" id="weekly_tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">本周阅读排行</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
+                            <ol class="list-inline">
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <br/>
+
+                    <ul class="nav nav-tabs" id="monthly_tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">本月阅读排行</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
+                            <ol class="list-inline">
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <br/>
+                    <ul class="nav nav-tabs" id="new_tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">好看的新书来了</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
+                            <ol class="list-inline">
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">5 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">2 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">3 [言情总裁] 绝美冥妻之问道</li>
+                                <li class="list-inline">4 [言情总裁] 故事从她瞧不起我说起</li>
+                                <li class="list-inline">1 [言情总裁] 绝美冥妻之问道</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Page Content -->
+    <!-- /Content -->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer-light">
+        <div class="copyright">
+            <div class="container">
+                <ul class="pull-right nomargin list-inline mobile-block">
+                    <li><a href="#">条款与条件</a></li>
+                    <li>&bull;</li>
+                    <li><a href="#">隐私</a></li>
+                </ul>
+                &copy; 2015 -
+                <!--<script>document.write(new Date().getFullYear())</script>-->
+                cmswing.com 版权所有 <!--{{controller.setup.WEB_SITE_TITLE}}--> <a href="http://www.miitbeian.gov.cn/"
+                                                                               target="_blank">ICP 号码</a>
+                <code> Powered by <strong><a href="https://www.cmswing.com"
+                                             target="_blank">网站链接</a></strong>
+                    版本号</code>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+</html>

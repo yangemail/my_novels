@@ -1,33 +1,35 @@
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+'use strict';
 
-const configureMongoose = require('../config/mongoose');
-const configureExpress = require('../config/express');
+// const configureMongoose = require('../config/mongoose');
+const configureExpress = require('../src/bootstrap/express');
 // const configurePassport = require('./config/passport');
-const debug = require('debug')('blog:www');
-var http = require('http');
+const debug = require('debug')('my_novels:www');
+const http = require('http');
+let www = null;
 
 
 exports.run = function () {
 // *** Make sure that your Mongoose configuration file is loaded before any other configuration is performed in the www.jsle.
-    const db = configureMongoose();
+//     const db = configureMongoose();
     const app = configureExpress();
 // const passport = configurePassport();
 
     /**
      * Get port from environment and store in Express.
      */
-    var port = normalizePort(process.env.PORT || '8082');
+    var port = normalizePort(process.env.PORT || '8081');
     app.set('port', port);
 
     /**
      * Create HTTP www
      */
-    var www = http.createServer(app);
+    www = http.createServer(app);
 
     /**
      * Listen on provided port, on all network interfaces.
      */
     www.listen(port);
+    // TODO
     www.on('error', onError);
     www.on('listening', onListening);
 
