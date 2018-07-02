@@ -21,6 +21,9 @@ const flash = require('connect-flash');
 
 const swig = require('swig-templates');
 
+// Controller
+const api = require('../controller/api.server.controller');
+
 module.exports = function () {
     const app = express();
 
@@ -67,10 +70,10 @@ module.exports = function () {
 
 
     // **** Routes ****
-    // require('../app/routes/index.server.routes')(app);
+    require('../router/api.server.router')(app);
+    require('../router/admin.server.router')(app);
     // require('../app/routes/locale.server.routes')(app);
     // require('../app/routes/auth.server.routes')(app);
-    // require('../app/routes/admin.server.routes')(app);
     // require('../app/routes/ue.server.routes')(app);
 
     // catch 404 and forward to error handler
