@@ -11,38 +11,81 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Customized styles -->
+    <!--<link rel="stylesheet" href="/static/admin/css/bootstrap-theme.min.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="/static/admin/css/site.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="/static/admin/css/share.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="/static/admin/css/admin.css" type="text/css"/>-->
+    <link rel="stylesheet" href="/static/admin/css/main.css" type="text/css"/>
+
     {% block style %}
     {% endblock %}
 
     <title>Admin</title>
 </head>
 <body>
-<div id="wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-2" style="background-color: gainsboro">
-                菜单选项
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">注册用户</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">图书分类</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">全部图书</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">图书章节</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col">
-                {% block content %}
-                {% endblock %}
-            </div>
+<!--顶部导航-->
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/admin">后台管理</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">用户管理 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        分类管理
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/admin/category">分类首页</a>
+                        <a class="dropdown-item" href="/admin/category/add">添加分类</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        图书管理
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">图书首页</a>
+                        <a class="dropdown-item" href="#">添加图书</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        章节管理
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="#">章节首页</a>
+                        <a class="dropdown-item" href="#">添加章节</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        评论管理
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                        <a class="dropdown-item" href="#">评论首页</a>
+                        <a class="dropdown-item" href="#">添加评论</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
+</div>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
 </div>
 
 

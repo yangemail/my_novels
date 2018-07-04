@@ -88,7 +88,7 @@ module.exports = function () {
         var code = err.status || 500;
         var message = code === 404 ? "请求的页面已失联~系统已自动记录该错误。" : "服务器出错了~系统已自动记录该错误。";
         res.status(code);
-        // logger.errLogger(req, err);
+        logger.errLogger(req, err);
         res.render('./share/error', {
             code: code,
             message: message

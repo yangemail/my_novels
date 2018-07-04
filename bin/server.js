@@ -1,6 +1,6 @@
 'use strict';
 
-// const configureMongoose = require('../config/mongoose');
+const configureMongoose = require('../src/bootstrap/mongoose');
 const configureExpress = require('../src/bootstrap/express');
 // const configurePassport = require('./config/passport');
 const debug = require('debug')('my_novels:www');
@@ -10,7 +10,7 @@ let www = null;
 
 exports.run = function () {
 // *** Make sure that your Mongoose configuration file is loaded before any other configuration is performed in the www.jsle.
-//     const db = configureMongoose();
+    const db = configureMongoose();
     const app = configureExpress();
 // const passport = configurePassport();
 
@@ -29,12 +29,8 @@ exports.run = function () {
      * Listen on provided port, on all network interfaces.
      */
     www.listen(port);
-    // TODO
     www.on('error', onError);
     www.on('listening', onListening);
-
-// app.listen(8081);
-// module.exports = app;
 
 // console.log('Server running at ' + www.address().address + ':' + www.address().port);
 };

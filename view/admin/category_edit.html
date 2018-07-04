@@ -1,0 +1,23 @@
+{% extends './inc/layout.html' %}
+
+{% block content %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">管理首页</a></li>
+        <li class="breadcrumb-item active" aria-current="page">分类编辑</li>
+    </ol>
+</nav>
+
+<h3>分类编辑 - {{category.name}}</h3>
+
+<form role="form" method="post">
+    <div class="form-group">
+        <label for="name">分类名称：</label>
+        <input type="text" value="{{category.name}}" class="form-control" id="name" placeholder="请输入分类名称" name="name">
+        <input type="text" value="{{category.sequence}}" class="form-control" id="sequence" placeholder="请输入分类序号" name="sequence">
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+
+{% endblock %}

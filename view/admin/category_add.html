@@ -1,0 +1,27 @@
+{% extends './inc/layout_admin.html' %}
+
+{% block content %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">管理首页</a></li>
+        <li class="breadcrumb-item active" aria-current="page">分类添加</li>
+    </ol>
+</nav>
+
+<h3>分类添加</h3>
+
+<form method="post" action="/admin/category/add">
+    <div class="form-group">
+        <label for="name">分类名称：</label>
+        <input type="text" class="form-control" id="name" placeholder="请输入分类名称" name="name">
+    </div>
+    <div class="form-group">
+        <label for="sequence">分类名称：</label>
+        <input type="text" class="form-control" id="sequence" placeholder="请输入分类排序" name="sequence">
+    </div>
+
+    <button type="submit" class="btn btn-primary">提交</button>
+</form>
+
+{% endblock %}
